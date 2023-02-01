@@ -15,7 +15,7 @@ class Project extends Model
 
     protected function getImageUrlAttribute(){ 
 
-        return $this->cover_image ? asset("storage/$this->cover_image"): null;
+        return $this->cover_image ? asset("storage/$this->cover_image"): "https://via.placeholder.com/1920x1080";
 
     }
 
