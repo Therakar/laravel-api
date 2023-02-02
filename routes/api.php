@@ -21,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 
 // rotta /api/projects
 Route::get('projects', [ProjectController::class, 'index']);
+
+//rotta /api/show
+Route::get('projects/{slug}', [ProjectController::class, 'show']);

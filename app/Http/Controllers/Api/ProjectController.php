@@ -15,4 +15,10 @@ class ProjectController extends Controller
 
         return $projects;
     }
+
+    public function show($slug){
+        $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
+
+        return $project;
+    }
 }
